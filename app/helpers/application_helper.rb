@@ -5,6 +5,6 @@ module ApplicationHelper
   end
 
   def token_email(token)
-    "#{token}@putsbox.com"
+    "#{token}@parse.mailingbox.tech"
   end
 end

@@ -15,9 +15,9 @@ class ApplicationController < ActionController::Base
     # To avoid XSS the email preview is under the preview subdomain,
     # which does not share the session with the root domain
     # This check makes sure users don't navigate on other pages than preview using the preview subdomain
-    if /^#{request.protocol}preview\./.match?(request.url)
-      redirect_to request.url.gsub(/#{request.protocol}preview\./, request.protocol)
-    end
+    # if /^#{request.protocol}preview\./.match?(request.url)
+    #   redirect_to request.url.gsub(/#{request.protocol}preview\./, request.protocol)
+    # end
   end
 
   def check_ownership!

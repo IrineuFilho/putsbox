@@ -71,7 +71,7 @@ class BucketsController < ApplicationController
 
     envelope = JSON.parse(params['envelope'])
     email_params['to']    = envelope['to'].to_a.dup
-    email_params['email'] = envelope['to'].select { |to| to.downcase.end_with? '@putsbox.com' }.first
+    email_params['email'] = envelope['to'].select { |to| to.downcase.end_with? '@parse.mailingbox.tech' }.first
 
     email_params['attachments'] = JSON.parse(params['attachment-info']).values if params['attachment-info'].present?
 

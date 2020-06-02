@@ -29,7 +29,8 @@ PutsBox::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'parse.mailingbox.tech' }
 
   config.allow_concurrency = true
 end
