@@ -16,8 +16,6 @@ gem 'redis'
 
 gem 'bootstrap-sass', '>= 3.4.1'
 
-gem 'figaro'
-
 group :production do
   gem 'rails_12factor'
 end

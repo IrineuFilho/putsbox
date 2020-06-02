@@ -24,3 +24,4 @@ log/
 .generators
 .rakeTasks
 .idea
+/config/application.yml
